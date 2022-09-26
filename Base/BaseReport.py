@@ -94,8 +94,8 @@ class OperateReport:
                     men = readInfo(t[wrap]["men"])
                     fps = readInfo(t[wrap]["fps"])
                     flow = readInfo(t[wrap]["flow"])
-                    print("----wrap-----")
-                    print(flow)
+                    # print("----wrap-----")
+                    # print(flow)
                     _write_center(worksheet, "G" + str(temp), BaseAnalysis.maxCpu(cpu), self.wd)
                     _write_center(worksheet, "H" + str(temp), BaseAnalysis.avgCpu(cpu), self.wd)
                     _write_center(worksheet, "I" + str(temp), BaseAnalysis.maxMen(men), self.wd)
@@ -107,8 +107,8 @@ class OperateReport:
 
                     _maxFlow = BaseAnalysis.maxFlow(flow)
                     _avgFLow = BaseAnalysis.avgFlow(flow)
-                    print("-----_maxFlow----------")
-                    print(_maxFlow)
+                    # print("-----_maxFlow----------")
+                    # print(_maxFlow)
                     _write_center(worksheet, "O" + str(temp), _maxFlow[0], self.wd)
                     _write_center(worksheet, "Q" + str(temp), _maxFlow[1], self.wd)
                     _write_center(worksheet, "P" + str(temp), _avgFLow[1], self.wd)
@@ -122,13 +122,13 @@ class OperateReport:
             lines = monkey_log.readlines()
             for line in lines:
                 if re.findall(go.ANR, line):
-                    print("存在anr错误:" + line)
+                    # print("存在anr错误:" + line)
                     self._crashM.append(line)
                 if re.findall(go.CRASH, line):
-                    print("存在crash错误:" + line)
+                    # print("存在crash错误:" + line)
                     self._crashM.append(line)
                 if re.findall(go.EXCEPTION, line):
-                    print("存在crash错误:" + line)
+                    # print("存在crash错误:" + line)
                     self._crashM.append(line)
     def crash(self):
         if len(self._crashM):
@@ -223,7 +223,7 @@ class OperateReport:
                 _write_center(worksheet, "E1", '上行流量(KB)', self.wd)
                 _write_center(worksheet, "F1", '下行流量(KB)', self.wd)
                 for item in t[wrap]:
-                    print("------data-----")
+                    # print("------data-----")
                     temp = 2
                     cpu = readInfo(t[wrap]["cpu"])
                     for item in cpu:

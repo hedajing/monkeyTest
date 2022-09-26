@@ -1,0 +1,1188 @@
+:Monkey: seed=1663728560445 count=50000
+:AllowPackage: com.litatom.app
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity com.google.android.apps.chrome.Main (from package com.android.chrome)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   - NOT USING main activity com.android.gallery3d.app.GalleryActivity (from package com.android.gallery3d)
+//   - NOT USING main activity com.android.settings.Settings (from package com.android.settings)
+//   - NOT USING main activity com.cyanogenmod.filemanager.activities.NavigationActivity (from package com.cyanogenmod.filemanager)
+//   - NOT USING main activity com.android.documentsui.LauncherActivity (from package com.android.documentsui)
+//   - NOT USING main activity com.android.flysilkworm.app.activity.FrameworkActivity (from package com.android.flysilkworm)
+//   - NOT USING main activity ldmnq.ldapp.MainActivity (from package com.android.googleinstaller)
+//   + Using main activity com.lit.app.ui.SplashActivity (from package com.litatom.app)
+// Selecting main activities from category android.intent.category.MONKEY
+//   - NOT USING main activity com.android.launcher3.Launcher (from package com.android.launcher3)
+//   - NOT USING main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   - NOT USING main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+// Seeded: 1663728560445
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1004.0,1539.0)
+:Sending Touch (ACTION_MOVE): 0:(1001.9928,1543.5469)
+:Sending Touch (ACTION_MOVE): 0:(997.4095,1561.3054)
+:Sending Touch (ACTION_UP): 0:(987.36554,1572.1954)
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.chat.ChatActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.feed.DetailsActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(139.0,1453.0)
+:Sending Touch (ACTION_MOVE): 0:(134.57379,1447.7151)
+:Sending Touch (ACTION_MOVE): 0:(125.2576,1424.7775)
+:Sending Touch (ACTION_MOVE): 0:(118.8912,1405.6068)
+:Sending Touch (ACTION_MOVE): 0:(103.02681,1393.8876)
+:Sending Touch (ACTION_MOVE): 0:(87.39453,1383.0702)
+:Sending Touch (ACTION_MOVE): 0:(83.452034,1379.3252)
+:Sending Touch (ACTION_MOVE): 0:(79.393906,1355.9783)
+:Sending Touch (ACTION_MOVE): 0:(68.16139,1336.4547)
+:Sending Touch (ACTION_MOVE): 0:(59.368263,1320.4373)
+:Sending Touch (ACTION_UP): 0:(57.327744,1303.418)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(706.0,1156.0)
+:Sending Touch (ACTION_MOVE): 0:(714.5452,1141.044)
+:Sending Touch (ACTION_MOVE): 0:(720.6552,1127.2208)
+:Sending Touch (ACTION_MOVE): 0:(727.8614,1118.2017)
+:Sending Touch (ACTION_MOVE): 0:(728.5548,1112.1826)
+:Sending Touch (ACTION_MOVE): 0:(734.5523,1110.8981)
+:Sending Touch (ACTION_MOVE): 0:(737.04364,1094.856)
+:Sending Touch (ACTION_UP): 0:(739.96466,1083.8868)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(83.0,1092.0)
+:Sending Touch (ACTION_UP): 0:(61.381725,1100.8284)
+Sleeping for 500 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(647.0,1046.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(643.9158,1040.9395) 1:(813.0,435.0)
+:Sending Touch (ACTION_MOVE): 0:(641.2918,1031.2585) 1:(804.8004,434.2246)
+:Sending Touch (ACTION_MOVE): 0:(639.61176,1017.083) 1:(788.42523,432.36658)
+:Sending Touch (ACTION_MOVE): 0:(638.6041,1007.01575) 1:(781.9929,430.41205)
+:Sending Touch (ACTION_MOVE): 0:(635.8713,1003.89343) 1:(773.1286,428.99307)
+:Sending Touch (ACTION_MOVE): 0:(633.7302,999.32306) 1:(771.79865,426.9226)
+:Sending Touch (ACTION_MOVE): 0:(631.5821,994.1715) 1:(758.03375,425.4704)
+:Sending Touch (ACTION_MOVE): 0:(631.52435,987.79114) 1:(742.92236,425.40417)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(628.4216,977.7059) 1:(741.7813,423.6542)
+:Sending Touch (ACTION_UP): 0:(628.253,972.3319)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(694.0,1474.0)
+:Sending Touch (ACTION_UP): 0:(694.8078,1471.2312)
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(413.0,1395.0)
+:Sending Touch (ACTION_UP): 0:(406.83508,1400.168)
+Sleeping for 500 milliseconds
+:Sending Flip keyboardOpen=false
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Key (ACTION_DOWN): 4    // KEYCODE_BACK
+:Sending Key (ACTION_UP): 4    // KEYCODE_BACK
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.me.UserDetailActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(665.0,330.0)
+:Sending Touch (ACTION_MOVE): 0:(667.3903,345.61508)
+:Sending Touch (ACTION_MOVE): 0:(676.57056,361.6207)
+:Sending Touch (ACTION_MOVE): 0:(683.65125,368.64157)
+:Sending Touch (ACTION_MOVE): 0:(687.7195,369.44522)
+:Sending Touch (ACTION_UP): 0:(690.61664,370.38486)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(510.0,1661.0)
+:Sending Touch (ACTION_MOVE): 0:(510.80527,1661.0217)
+:Sending Touch (ACTION_MOVE): 0:(514.20685,1661.0511)
+:Sending Touch (ACTION_MOVE): 0:(517.8324,1661.0773)
+:Sending Touch (ACTION_MOVE): 0:(520.61346,1661.1113)
+    //[calendar_time:2022-09-19 16:22:16.210  system_uptime:17782943]
+    // Sending event #100
+:Sending Touch (ACTION_MOVE): 0:(521.22473,1661.1168)
+:Sending Touch (ACTION_MOVE): 0:(521.9977,1661.1555)
+:Sending Touch (ACTION_MOVE): 0:(525.3988,1661.1589)
+:Sending Touch (ACTION_MOVE): 0:(526.8905,1661.1877)
+:Sending Touch (ACTION_UP): 0:(528.8846,1661.2053)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(384.0,1525.0)
+:Sending Touch (ACTION_UP): 0:(389.27975,1527.0582)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 4    // KEYCODE_BACK
+:Sending Key (ACTION_UP): 4    // KEYCODE_BACK
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Key (ACTION_DOWN): 249    // KEYCODE_TV_INPUT_COMPONENT_1
+:Sending Key (ACTION_UP): 249    // KEYCODE_TV_INPUT_COMPONENT_1
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(273.0,356.0)
+:Sending Touch (ACTION_MOVE): 0:(276.96317,356.85962)
+:Sending Touch (ACTION_UP): 0:(284.5716,361.3378)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(779.0,329.0)
+:Sending Touch (ACTION_UP): 0:(771.41315,329.30478)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(125.0,740.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(123.90235,740.90283) 1:(811.0,1845.0)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(120.78359,743.4492) 1:(809.83466,1841.7234)
+:Sending Touch (ACTION_UP): 0:(118.895004,744.705)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(919.0,48.0)
+:Sending Touch (ACTION_UP): 0:(909.05005,41.529507)
+Sleeping for 500 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 184    // KEYCODE_PROG_GREEN
+:Sending Key (ACTION_UP): 184    // KEYCODE_PROG_GREEN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1008.0,1495.0)
+:Sending Touch (ACTION_UP): 0:(998.95984,1498.6285)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(467.0,1533.0)
+:Sending Touch (ACTION_UP): 0:(466.9794,1543.4703)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 24    // KEYCODE_VOLUME_UP
+:Sending Key (ACTION_UP): 24    // KEYCODE_VOLUME_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(955.0,403.0)
+:Sending Touch (ACTION_UP): 0:(955.7121,394.1219)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(342.0,1365.0)
+:Sending Touch (ACTION_MOVE): 0:(349.08322,1353.839)
+:Sending Touch (ACTION_MOVE): 0:(369.46338,1344.1173)
+:Sending Touch (ACTION_UP): 0:(385.8379,1340.1765)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(1039.0,200.0)
+:Sending Touch (ACTION_MOVE): 0:(1042.2242,193.82877)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(1048.0951,181.33257)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(1053.3135,169.59099)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(1060.481,150.58714)
+    // Injection Failed
+    //[calendar_time:2022-09-19 16:22:28.456  system_uptime:17795188]
+    // Sending event #200
+:Sending Touch (ACTION_MOVE): 0:(1060.5176,143.71759)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(1063.689,120.95085)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(1066.0552,110.34479)
+    // Injection Failed
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(258.0,739.0)
+:Sending Touch (ACTION_UP): 0:(272.41437,742.01746)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(938.0,1031.0)
+:Sending Touch (ACTION_MOVE): 0:(938.523,1029.8523)
+:Sending Touch (ACTION_MOVE): 0:(940.4383,1024.6624)
+:Sending Touch (ACTION_MOVE): 0:(942.1049,1018.25104)
+:Sending Touch (ACTION_MOVE): 0:(943.9842,1017.7938)
+    // Injection Failed
+:Sending Touch (ACTION_MOVE): 0:(945.1019,1012.67584)
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(946.86694,1008.1953)
+    // Injection Failed
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(275.0,1537.0)
+:Sending Touch (ACTION_UP): 0:(276.0361,1536.8999)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 73    // KEYCODE_BACKSLASH
+:Sending Key (ACTION_UP): 73    // KEYCODE_BACKSLASH
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(79.0,1635.0)
+:Sending Touch (ACTION_MOVE): 0:(79.086,1629.7748)
+:Sending Touch (ACTION_MOVE): 0:(79.10132,1629.5471)
+:Sending Touch (ACTION_MOVE): 0:(79.217026,1614.1696)
+:Sending Touch (ACTION_MOVE): 0:(79.23086,1604.1292)
+:Sending Touch (ACTION_MOVE): 0:(79.33439,1592.8875)
+:Sending Touch (ACTION_MOVE): 0:(79.36595,1577.269)
+:Sending Touch (ACTION_MOVE): 0:(79.3709,1568.833)
+:Sending Touch (ACTION_UP): 0:(79.427536,1561.4612)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1053.0,1700.0)
+:Sending Touch (ACTION_UP): 0:(1056.7612,1700.9625)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 14    // KEYCODE_7
+:Sending Key (ACTION_UP): 14    // KEYCODE_7
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 3    // KEYCODE_HOME
+:Sending Key (ACTION_UP): 3    // KEYCODE_HOME
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(276.0,125.0)
+:Sending Touch (ACTION_MOVE): 0:(283.67337,122.459595)
+:Sending Touch (ACTION_MOVE): 0:(295.518,118.95018)
+:Sending Touch (ACTION_MOVE): 0:(310.8512,114.360146)
+:Sending Touch (ACTION_MOVE): 0:(312.65002,110.15776)
+:Sending Touch (ACTION_MOVE): 0:(327.3096,106.33667)
+:Sending Touch (ACTION_UP): 0:(339.92416,102.83764)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(342.0,1721.0)
+:Sending Touch (ACTION_UP): 0:(348.9816,1721.4935)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(17.0,1232.0)
+:Sending Touch (ACTION_UP): 0:(21.65886,1222.9816)
+Sleeping for 500 milliseconds
+:Sending Flip keyboardOpen=true
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(266.0,1346.0)
+:Sending Touch (ACTION_UP): 0:(264.62103,1341.1942)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 25    // KEYCODE_VOLUME_DOWN
+:Sending Key (ACTION_UP): 25    // KEYCODE_VOLUME_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Key (ACTION_DOWN): 192    // KEYCODE_BUTTON_5
+:Sending Key (ACTION_UP): 192    // KEYCODE_BUTTON_5
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+    //[calendar_time:2022-09-19 16:22:43.436  system_uptime:17810168]
+    // Sending event #300
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(946.0,496.0)
+:Sending Touch (ACTION_UP): 0:(942.3361,493.6519)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 33    // KEYCODE_E
+:Sending Key (ACTION_UP): 33    // KEYCODE_E
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(423.0,336.0)
+:Sending Touch (ACTION_UP): 0:(421.34692,331.40518)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(921.0,1829.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(924.68994,1827.3641) 1:(56.0,289.0)
+:Sending Touch (ACTION_MOVE): 0:(928.09576,1825.032) 1:(45.315712,303.1003)
+:Sending Touch (ACTION_MOVE): 0:(932.4816,1824.7493) 1:(36.79265,305.64517)
+:Sending Touch (ACTION_MOVE): 0:(933.0717,1824.2572) 1:(30.176151,312.08517)
+:Sending Touch (ACTION_MOVE): 0:(937.19806,1823.2329) 1:(20.612276,326.74533)
+:Sending Touch (ACTION_MOVE): 0:(941.297,1821.819) 1:(9.016764,330.11142)
+:Sending Touch (ACTION_MOVE): 0:(943.9959,1820.1147) 1:(0.0,341.66592)
+:Sending Touch (ACTION_MOVE): 0:(945.64606,1819.8898) 1:(0.0,347.88962)
+:Sending Touch (ACTION_MOVE): 0:(946.9156,1818.6525) 1:(0.0,350.53766)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(949.67816,1817.4803) 1:(0.0,369.0161)
+:Sending Touch (ACTION_UP): 0:(953.8617,1816.7108)
+Sleeping for 500 milliseconds
+:Sending Flip keyboardOpen=false
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(460.0,693.0)
+:Sending Touch (ACTION_UP): 0:(456.14615,693.5297)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(783.0,243.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(776.77216,246.57088) 1:(23.0,1788.0)
+:Sending Touch (ACTION_MOVE): 0:(772.91693,247.05154) 1:(19.44295,1796.2439)
+:Sending Touch (ACTION_MOVE): 0:(753.2881,247.5599) 1:(12.948965,1807.7692)
+:Sending Touch (ACTION_MOVE): 0:(742.35364,250.92096) 1:(0.0,1811.5902)
+:Sending Touch (ACTION_MOVE): 0:(735.5849,251.3776) 1:(0.0,1814.6976)
+:Sending Touch (ACTION_MOVE): 0:(728.14716,252.66216) 1:(0.0,1818.0289)
+:Sending Touch (ACTION_MOVE): 0:(724.8386,256.78098) 1:(0.0,1824.3125)
+:Sending Touch (ACTION_MOVE): 0:(712.6083,258.37158) 1:(0.0,1830.6168)
+:Sending Touch (ACTION_MOVE): 0:(699.06793,262.78488) 1:(0.0,1831.0612)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(697.4389,265.3978) 1:(0.0,1836.1501)
+:Sending Touch (ACTION_UP): 0:(691.0938,269.58926)
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 41    // KEYCODE_M
+:Sending Key (ACTION_UP): 41    // KEYCODE_M
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 237    // KEYCODE_TV_SATELLITE
+:Sending Key (ACTION_UP): 237    // KEYCODE_TV_SATELLITE
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.feed.DetailsActivity } in package com.litatom.app
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.feed.DetailsActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 138    // KEYCODE_F8
+:Sending Key (ACTION_UP): 138    // KEYCODE_F8
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Touch (ACTION_DOWN): 0:(687.0,1323.0)
+:Sending Touch (ACTION_MOVE): 0:(697.7177,1325.3256)
+:Sending Touch (ACTION_MOVE): 0:(719.90344,1326.141)
+:Sending Touch (ACTION_MOVE): 0:(730.8901,1331.4369)
+:Sending Touch (ACTION_MOVE): 0:(745.9234,1342.0459)
+:Sending Touch (ACTION_MOVE): 0:(755.9499,1352.7396)
+:Sending Touch (ACTION_MOVE): 0:(763.1285,1356.1792)
+:Sending Touch (ACTION_MOVE): 0:(784.6084,1370.2593)
+:Sending Touch (ACTION_UP): 0:(789.49316,1371.3026)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ad.ui.RewardedAdActivity } in package com.litatom.app
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 136    // KEYCODE_F6
+:Sending Key (ACTION_UP): 136    // KEYCODE_F6
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ad.ui.RewardedAdActivity } in package com.litatom.app
+    // activityResuming(com.litatom.app)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+    //[calendar_time:2022-09-19 16:22:57.238  system_uptime:17823971]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Key (ACTION_DOWN): 65    // KEYCODE_ENVELOPE
+:Sending Key (ACTION_UP): 65    // KEYCODE_ENVELOPE
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.me.UserDetailActivity } in package com.litatom.app
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(442.0,654.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(443.29596,653.6815) 1:(190.0,271.0)
+:Sending Touch (ACTION_MOVE): 0:(445.0233,651.4232) 1:(184.14825,269.96823)
+:Sending Touch (ACTION_MOVE): 0:(446.3873,650.9889) 1:(178.43692,268.58997)
+:Sending Touch (ACTION_MOVE): 0:(447.00668,650.73267) 1:(162.46478,264.2708)
+:Sending Touch (ACTION_MOVE): 0:(447.03842,650.63544) 1:(143.12405,257.5147)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(448.62622,647.68207) 1:(126.879745,250.80345)
+:Sending Touch (ACTION_UP): 0:(449.04373,644.5729)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 251    // KEYCODE_TV_INPUT_VGA_1
+:Sending Key (ACTION_UP): 251    // KEYCODE_TV_INPUT_VGA_1
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Key (ACTION_DOWN): 68    // KEYCODE_GRAVE
+:Sending Key (ACTION_UP): 68    // KEYCODE_GRAVE
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.chat.ChatActivity } in package com.litatom.app
+:Sending Flip keyboardOpen=true
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 164    // KEYCODE_VOLUME_MUTE
+:Sending Key (ACTION_UP): 164    // KEYCODE_VOLUME_MUTE
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(977.0,1723.0)
+    //[calendar_time:2022-09-19 16:23:04.953  system_uptime:17831685]
+    // Sending event #500
+:Sending Touch (ACTION_UP): 0:(981.36127,1704.1815)
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(1026.0,1789.0)
+:Sending Touch (ACTION_MOVE): 0:(1030.3983,1792.9402)
+:Sending Touch (ACTION_MOVE): 0:(1046.264,1796.3616)
+:Sending Touch (ACTION_MOVE): 0:(1062.8785,1801.9465)
+:Sending Touch (ACTION_MOVE): 0:(1068.5756,1810.3728)
+:Sending Touch (ACTION_MOVE): 0:(1075.3882,1810.7915)
+:Sending Touch (ACTION_MOVE): 0:(1080.0,1811.5841)
+:Sending Touch (ACTION_UP): 0:(1080.0,1813.5741)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.feed.DetailsActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.contacts/.activities.PeopleActivity } in package com.android.contacts
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 3    // KEYCODE_HOME
+:Sending Key (ACTION_UP): 3    // KEYCODE_HOME
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(338.0,198.0)
+:Sending Touch (ACTION_MOVE): 0:(329.4092,195.62)
+:Sending Touch (ACTION_MOVE): 0:(317.80087,190.6331)
+:Sending Touch (ACTION_MOVE): 0:(314.8042,186.59967)
+:Sending Touch (ACTION_MOVE): 0:(312.63922,184.94592)
+:Sending Touch (ACTION_MOVE): 0:(309.765,182.97401)
+:Sending Touch (ACTION_MOVE): 0:(297.40298,181.90494)
+:Sending Touch (ACTION_MOVE): 0:(288.43643,178.23381)
+:Sending Touch (ACTION_UP): 0:(281.4876,174.95311)
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 232    // KEYCODE_TV_RADIO_SERVICE
+:Sending Key (ACTION_UP): 232    // KEYCODE_TV_RADIO_SERVICE
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(539.0,60.0)
+:Sending Touch (ACTION_UP): 0:(540.50806,52.06843)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.feed.DetailsActivity } in package com.litatom.app
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(19.0,1879.0)
+:Sending Touch (ACTION_UP): 0:(35.692703,1879.3671)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(233.0,1803.0)
+:Sending Touch (ACTION_UP): 0:(232.63905,1803.809)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+    // activityResuming(com.litatom.app)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(335.0,1487.0)
+:Sending Touch (ACTION_MOVE): 0:(346.83282,1485.0269)
+:Sending Touch (ACTION_MOVE): 0:(358.883,1477.4813)
+:Sending Touch (ACTION_MOVE): 0:(367.3401,1475.9305)
+:Sending Touch (ACTION_MOVE): 0:(382.20416,1474.0956)
+:Sending Touch (ACTION_MOVE): 0:(392.65726,1471.627)
+:Sending Touch (ACTION_MOVE): 0:(403.68146,1462.2262)
+:Sending Touch (ACTION_MOVE): 0:(412.76337,1453.6061)
+:Sending Touch (ACTION_UP): 0:(430.73016,1450.7959)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(44.0,1205.0)
+:Sending Touch (ACTION_MOVE): 0:(45.11029,1200.9902)
+:Sending Touch (ACTION_MOVE): 0:(49.41928,1183.683)
+:Sending Touch (ACTION_MOVE): 0:(49.53402,1167.3396)
+:Sending Touch (ACTION_MOVE): 0:(50.74082,1156.7336)
+:Sending Touch (ACTION_MOVE): 0:(53.984188,1156.4424)
+:Sending Touch (ACTION_MOVE): 0:(54.37945,1153.3086)
+:Sending Touch (ACTION_MOVE): 0:(59.783478,1134.8921)
+:Sending Touch (ACTION_UP): 0:(63.708622,1127.0914)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+    //[calendar_time:2022-09-19 16:23:16.706  system_uptime:17843438]
+    // Sending event #600
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Key (ACTION_DOWN): 24    // KEYCODE_VOLUME_UP
+:Sending Key (ACTION_UP): 24    // KEYCODE_VOLUME_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Key (ACTION_DOWN): 220    // KEYCODE_BRIGHTNESS_DOWN
+    // Rejecting start of Intent { act=android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog } in package com.android.systemui
+:Sending Key (ACTION_UP): 220    // KEYCODE_BRIGHTNESS_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 108    // KEYCODE_BUTTON_START
+:Sending Key (ACTION_UP): 108    // KEYCODE_BUTTON_START
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.chat.ChatActivity } in package com.litatom.app
+    // activityResuming(com.litatom.app)
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.ui.chat.ChatActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(596.0,1201.0)
+:Sending Touch (ACTION_UP): 0:(580.21936,1199.9655)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(988.0,1100.0)
+:Sending Touch (ACTION_UP): 0:(976.41077,1117.317)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(322.0,1595.0)
+:Sending Touch (ACTION_UP): 0:(320.3746,1595.2491)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(86.0,1757.0)
+:Sending Touch (ACTION_UP): 0:(94.199715,1755.2257)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(104.0,1426.0)
+:Sending Touch (ACTION_UP): 0:(114.82622,1429.0463)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(327.0,1684.0)
+:Sending Touch (ACTION_UP): 0:(325.11334,1681.8851)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(788.0,1905.0)
+:Sending Touch (ACTION_UP): 0:(805.9864,1905.0868)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(691.0,1751.0)
+:Sending Touch (ACTION_MOVE): 0:(696.54803,1758.696)
+:Sending Touch (ACTION_MOVE): 0:(702.6655,1763.6715)
+:Sending Touch (ACTION_MOVE): 0:(707.63617,1771.5972)
+:Sending Touch (ACTION_UP): 0:(713.0526,1772.3528)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.litatom.app/com.lit.app.party.PartyChatActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 3    // KEYCODE_HOME
+:Sending Key (ACTION_UP): 3    // KEYCODE_HOME
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher3/.Launcher } in package com.android.launcher3
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(575.0,44.0)
+:Sending Touch (ACTION_UP): 0:(585.05804,46.12017)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Touch (ACTION_DOWN): 0:(899.0,145.0)
+:Sending Touch (ACTION_MOVE): 0:(901.418,134.89932)
+:Sending Touch (ACTION_MOVE): 0:(904.9192,130.16551)
+:Sending Touch (ACTION_MOVE): 0:(906.284,117.541595)
+:Sending Touch (ACTION_MOVE): 0:(906.8891,114.49742)
+:Sending Touch (ACTION_UP): 0:(907.33307,106.313484)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 252    // KEYCODE_TV_AUDIO_DESCRIPTION
+:Sending Key (ACTION_UP): 252    // KEYCODE_TV_AUDIO_DESCRIPTION
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+    //[calendar_time:2022-09-19 16:23:31.908  system_uptime:17858641]
+    // Sending event #700
+Sleeping for 500 milliseconds
+    //[calendar_time:2022-09-19 16:23:32.409  system_uptime:17859141]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(703.0,927.0)
+:Sending Touch (ACTION_UP): 0:(682.0969,916.73627)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.litatom.app/com.lit.app.ui.SplashActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.litatom.app/com.lit.app.ui.SplashActivity } in package com.litatom.app
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 15    // KEYCODE_8
+:Sending Key (ACTION_UP): 15    // KEYCODE_8
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(102.0,1694.0)
+:Sending Touch (ACTION_UP): 0:(101.06515,1696.6924)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(843.0,447.0)
+:Sending Touch (ACTION_UP): 0:(842.9505,449.47397)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(30.0,430.0)
+:Sending Touch (ACTION_UP): 0:(40.392212,453.37036)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(693.0,583.0)
+:Sending Touch (ACTION_MOVE): 0:(686.049,591.4755)
+:Sending Touch (ACTION_MOVE): 0:(675.1662,602.43353)
+:Sending Touch (ACTION_MOVE): 0:(671.3724,616.18)
+:Sending Touch (ACTION_MOVE): 0:(668.55457,632.22424)
+:Sending Touch (ACTION_MOVE): 0:(664.1608,652.3721)
+:Sending Touch (ACTION_MOVE): 0:(663.907,664.6422)
+:Sending Touch (ACTION_MOVE): 0:(660.5651,675.5674)
+:Sending Touch (ACTION_MOVE): 0:(652.3733,697.95197)
+:Sending Touch (ACTION_UP): 0:(648.4529,718.9206)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(632.0,1090.0)
+:Sending Touch (ACTION_UP): 0:(651.3061,1087.0382)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(260.0,1458.0)
+:Sending Touch (ACTION_UP): 0:(258.6789,1457.9473)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(868.0,1070.0)
+:Sending Touch (ACTION_UP): 0:(878.2383,1069.0023)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(852.0,297.0)
+:Sending Touch (ACTION_UP): 0:(851.62524,283.69016)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 198    // KEYCODE_BUTTON_11
+:Sending Key (ACTION_UP): 198    // KEYCODE_BUTTON_11
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(868.0,781.0)
+:Sending Touch (ACTION_UP): 0:(864.57355,776.2532)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+    //[calendar_time:2022-09-19 16:23:42.082  system_uptime:17868814]
+    // Sending event #800
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(715.0,805.0)
+:Sending Touch (ACTION_MOVE): 0:(709.91364,807.91376)
+:Sending Touch (ACTION_MOVE): 0:(698.3518,816.48755)
+:Sending Touch (ACTION_MOVE): 0:(686.11993,822.1502)
+:Sending Touch (ACTION_MOVE): 0:(675.74036,832.48627)
+:Sending Touch (ACTION_MOVE): 0:(652.7551,839.8678)
+:Sending Touch (ACTION_MOVE): 0:(652.2074,848.1669)
+:Sending Touch (ACTION_MOVE): 0:(646.0843,859.22394)
+:Sending Touch (ACTION_UP): 0:(627.02216,867.3629)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(547.0,209.0)
+:Sending Touch (ACTION_UP): 0:(553.89667,211.50093)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 163    // KEYCODE_NUMPAD_RIGHT_PAREN
+:Sending Key (ACTION_UP): 163    // KEYCODE_NUMPAD_RIGHT_PAREN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Key (ACTION_DOWN): 109    // KEYCODE_BUTTON_SELECT
+:Sending Key (ACTION_UP): 109    // KEYCODE_BUTTON_SELECT
+Sleeping for 500 milliseconds

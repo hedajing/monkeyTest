@@ -11,7 +11,8 @@ def monkeyConfig(init_file):
     config.read(init_file)
     app = {}
     app["package_name"] = config['DEFAULT']['package_name']
-    # app["activity"] = config['DEFAULT']['activity']
+    app["activity"] = config['DEFAULT']['activity']
     app["net"] = config['DEFAULT']['net']
+    app["white_activity"] = config['DEFAULT']['white_activity']
     app["cmd"] = config['DEFAULT']['cmd'] + ">"
     return app

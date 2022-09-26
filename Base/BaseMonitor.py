@@ -14,11 +14,11 @@ PATH = lambda p: os.path.abspath(
 def get_men(pkg_name, devices):
     try:
         cmd = "adb -s " +  devices +" shell  dumpsys  meminfo %s" % (pkg_name)
-        print(cmd)
+        # print(cmd)
         output = subprocess.check_output(cmd).split()
         # print(output)
         s_men = ".".join([x.decode() for x in output]) # 转换为string
-        print(s_men)
+        # print(s_men)
         men2 = int(re.findall("TOTAL.(\d+)*", s_men, re.S)[0])
     except:
         men2 = 0
@@ -43,7 +43,7 @@ def get_men(pkg_name, devices):
 
 def get_fps(pkg_name, devices):
     _adb = "adb -s " + devices +" shell dumpsys gfxinfo %s" % pkg_name
-    print(_adb)
+    # print(_adb)
     results = os.popen(_adb).read().strip()
     frames = [x for x in results.split('\n') if validator(x)]
     frame_count = len(frames)
@@ -81,19 +81,19 @@ def get_fps(pkg_name, devices):
     writeInfo(_fps, PATH("../info/" + devices + "_fps.pickle"))
 
     # return (frame_count, jank_count, fps)
-    print("-----fps------")
-    print(_fps)
+    # print("-----fps------")
+    # print(_fps)
 
 
 def get_battery(devices):
     try:
         cmd = "adb -s " + devices + " shell dumpsys battery"
-        print(cmd)
+        # print(cmd)
         output = subprocess.check_output(cmd).split()
         # _batter = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
         #                            stderr=subprocess.PIPE).stdout.readlines()
         st = ".".join([x.decode() for x in output]) # 转换为string
-        print(st)
+        # print(st)
         battery2 = int(re.findall("level:.(\d+)*", st, re.S)[0])
 
     except:
@@ -106,8 +106,8 @@ def get_battery(devices):
 
 def get_pid(pkg_name, devices):
     cmd = "adb -s " + devices + " shell ps | findstr " + pkg_name
-    print("----get_pid-------")
-    print(cmd)
+    # print("----get_pid-------")
+    # print(cmd)
     pid = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE).stdout.readlines()
     for item in pid:
@@ -120,7 +120,7 @@ def get_flow(pid, type, devices):
     upflow = downflow = 0
     if pid is not None:
         cmd = "adb -s " + devices + " shell cat /proc/" + pid + "/net/dev"
-        print(cmd)
+        # print(cmd)
         _flow = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE,
                                  stderr=subprocess.PIPE).stdout.readlines()
         for item in _flow:
@@ -128,14 +128,14 @@ def get_flow(pid, type, devices):
                 # 0 上传流量，1 下载流量
                 upflow = int(item.split()[1].decode())
                 downflow = int(item.split()[9].decode())
-                print("------flow---------")
-                print(upflow)
+                # print("------flow---------")
+                # print(upflow)
                 break
             if type == "gprs" and item.split()[0].decode() == "rmnet0:":  # gprs
-                print("-----flow---------")
+                # print("-----flow---------")
                 upflow = int(item.split()[1].decode())
                 downflow = int(item.split()[9].decode())
-                print(upflow)
+                # print(upflow)
                 break
 
     writeFlowInfo(upflow, downflow, PATH("../info/" + devices + "_flow.pickle"))
@@ -158,7 +158,7 @@ def totalCpuTime(devices):
     '''
 
     cmd = "adb -s " + devices +" shell cat /proc/stat"
-    print(cmd)
+    # print(cmd)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE,
                          stderr=subprocess.PIPE,
                          stdin=subprocess.PIPE, shell=True)
@@ -174,15 +174,15 @@ def totalCpuTime(devices):
             iowait = res[5].decode()
             irq = res[6].decode()
             softirq = res[7].decode()
-            print("user=" + user)
-            print("nice=" + nice)
-            print("system=" + system)
-            print("idle=" + idle)
-            print("iowait=" + iowait)
-            print("irq=" + irq)
-            print("softirq=" + softirq)
+            # print("user=" + user)
+            # print("nice=" + nice)
+            # print("system=" + system)
+            # print("idle=" + idle)
+            # print("iowait=" + iowait)
+            # print("irq=" + irq)
+            # print("softirq=" + softirq)
             result = int(user) + int(nice) + int(system) + int(idle) + int(iowait) + int(irq) + int(softirq)
-            print("totalCpuTime"+str(result))
+            # print("totalCpuTime"+str(result))
             return result
 
 
@@ -202,7 +202,7 @@ def processCpuTime(pid, devices):
     utime=stime=cutime=cstime = 0
     try:
         cmd = "adb -s "+ devices + " shell cat /proc/" + pid +"/stat"
-        print(cmd)
+        # print(cmd)
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE,
                              stderr=subprocess.PIPE,
                              stdin=subprocess.PIPE, shell=True)
@@ -213,12 +213,12 @@ def processCpuTime(pid, devices):
         stime = res[14].decode()
         cutime = res[15].decode()
         cstime = res[16].decode()
-        print("utime="+utime)
-        print("stime="+stime)
-        print("cutime="+cutime)
-        print("cstime="+cstime)
+        # print("utime="+utime)
+        # print("stime="+stime)
+        # print("cutime="+cutime)
+        # print("cstime="+cstime)
         result = int(utime) + int(stime) + int(cutime) + int(cstime)
-        print("processCpuTime="+str(result))
+        # print("processCpuTime="+str(result))
     except :
         result = 0
     return result
@@ -226,7 +226,7 @@ def processCpuTime(pid, devices):
 # 得到几核cpu
 def get_cpu_kel(devices):
     cmd = "adb -s " + devices + " shell cat /proc/cpuinfo"
-    print(cmd)
+    # print(cmd)
     output = subprocess.check_output(cmd).split()
     sitem = ".".join([x.decode() for x in output])  # 转换为string
     return len(re.findall("processor", sitem))
@@ -248,13 +248,13 @@ def cpu_rate(pid, cpukel, devices):
     time.sleep(1)
     totalCpuTime2 = totalCpuTime(devices)
     totalCpuTime3 = (totalCpuTime2 - totalCpuTime1)*cpukel
-    print("totalCpuTime3="+str(totalCpuTime3))
-    print("processCpuTime3="+str(processCpuTime3))
+    # print("totalCpuTime3="+str(totalCpuTime3))
+    # print("processCpuTime3="+str(processCpuTime3))
 
     cpu = 100 * (processCpuTime3) / (totalCpuTime3)
     writeInfo(cpu, PATH("../info/" + devices + "_cpu.pickle"))
-    print("--------cpu--------")
-    print(cpu)
+    # print("--------cpu--------")
+    # print(cpu)
 if __name__ == '__main__':
 
     # cpu_rate("2749")

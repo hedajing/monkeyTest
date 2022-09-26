@@ -15,8 +15,8 @@ def writeSum(init, data=None, path="data.pickle"):
         result = _read - 1
 
     with open(path, 'wb') as f:
-        print("------writeSum-------")
-        print(result)
+        # print("------writeSum-------")
+        # print(result)
         pickle.dump(result, f)
 
 
@@ -27,10 +27,10 @@ def readSum(path):
             data = pickle.load(f)
         except EOFError:
             data = {}
-            print("读取文件错误")
-    print("------read-------")
-    print(path)
-    print(data)
+            # print("读取文件错误")
+    # print("------read-------")
+    # print(path)
+    # print(data)
     return data
 
 
@@ -43,9 +43,9 @@ def readInfo(path):
         except EOFError:
             data = []
             # print("读取文件错误")
-    print("------read-------")
-    print(path)
-    print(data)
+    # print("------read-------")
+    # print(path)
+    # print(data)
     return data
 
 
@@ -58,14 +58,14 @@ def writeInfo(data, path="data.pickle"):
     else:
         result.append(data)
     with open(path, 'wb') as f:
-        print("------writeInfo-------")
-        print(result)
+        # print("------writeInfo-------")
+        # print(result)
         pickle.dump(result, f)
 
 def writeFlowInfo(upflow, downflow, path="data.pickle"):
-    print("---data-----")
-    print("上行流量="+str(upflow))
-    print("下行流量="+str(downflow))
+    # print("---data-----")
+    # print("上行流量="+str(upflow))
+    # print("下行流量="+str(downflow))
 
     _read = readInfo(path)
     result = [[], []]
@@ -77,8 +77,8 @@ def writeFlowInfo(upflow, downflow, path="data.pickle"):
         result[0].append(upflow)
         result[1].append(downflow)
     with open(path, 'wb') as f:
-        print("------writeFlowInfo-------")
-        print(result)
+        # print("------writeFlowInfo-------")
+        # print(result)
         pickle.dump(result, f)
 
 

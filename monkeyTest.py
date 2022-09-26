@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-import pickle
+from typing import Any
 
+import pickle
+import re
 import subprocess
 import shutil
 import threading
@@ -9,7 +11,9 @@ from multiprocessing import Process
 
 from Base.BasePickle import writeInfo, writeSum, readInfo
 from Base.BaseWriteReport import report
-__author__ = 'shikun'
+
+__author__ = 'asdfgh'
+
 import datetime
 import uuid
 import time
@@ -28,7 +32,6 @@ PATH = lambda p: os.path.abspath(
 )
 
 ba = AdbCommon.AndroidDebugBridge()
-
 
 info = []
 
@@ -57,28 +60,32 @@ def mkdirInit(devices, app, data=None):
     OperateFile(flow).mkdir_file()
     OperateFile(battery).mkdir_file()
     OperateFile(fps).mkdir_file()
-    OperateFile(PATH("./info/sumInfo.pickle")).mkdir_file() # 用于记录是否已经测试完毕，里面存的是一个整数
-    OperateFile(PATH("./info/info.pickle")).mkdir_file() # 用于记录统计结果的信息，是[{}]的形式
+    OperateFile(PATH("./info/sumInfo.pickle")).mkdir_file()  # 用于记录是否已经测试完毕，里面存的是一个整数
+    OperateFile(PATH("./info/info.pickle")).mkdir_file()  # 用于记录统计结果的信息，是[{}]的形式
 
-    writeSum(0, data, PATH("./info/sumInfo.pickle")) # 初始化记录当前真实连接的设备数
+    writeSum(0, data, PATH("./info/sumInfo.pickle"))  # 初始化记录当前真实连接的设备数
+
 
 def runnerPool():
-    shutil.rmtree((PATH("./info/")))  # 删除持久化目录
-    os.makedirs(PATH("./info/")) # 创建持久化目录
-    devices_Pool = []
-    devices = ba.attached_devices()
-    if devices:
-        for item in range(0, len(devices)):
-            _app = {}
-            _app["devices"] = devices[item]
-            _app["num"] = len(devices)
-            devices_Pool.append(_app)
-        pool = Pool(len(devices))
-        pool.map(start, devices_Pool)
-        pool.close()
-        pool.join()
-    else:
-        print("设备不存在")
+    try:
+        shutil.rmtree((PATH("./info/")))  # 删除持久化目录
+        os.makedirs(PATH("./info/"))  # 创建持久化目录
+        devices_Pool = []
+        devices = ba.attached_devices()
+        if devices:
+            for item in range(0, len(devices)):
+                _app = {}
+                _app["devices"] = devices[item]
+                _app["num"] = len(devices)
+                devices_Pool.append(_app)
+            pool = Pool(len(devices) + 1)
+            pool.map(start, devices_Pool)
+            pool.close()
+            pool.join()
+        else:
+            print("设备不存在")
+    except Exception:
+        runnerPool()
 
 
 def start(devicess):
@@ -87,8 +94,8 @@ def start(devicess):
     app = {}
     mkdirInit(devices, app, num)
     mc = BaseMonkeyConfig.monkeyConfig(PATH("monkey.ini"))
-    # 打开想要的activity
-    # ba.open_app(mc["package_name"], mc["activity"], devices) 留着备用可以统计每次打开哪个页面的启动时间等
+    # 打开想要的activity 留着备用可以统计每次打开哪个页面的启动时间等
+    ba.open_app(mc["package_name"], mc["activity"], devices)
     # monkey开始测试
     mc["log"] = PATH("./log") + "\\" + str(uuid.uuid4())
     mc["monkey_log"] = mc["log"] + "monkey.log"
@@ -109,19 +116,19 @@ def start(devicess):
             BaseMonitor.get_battery(devices)
             if monkeylog.read().count('Monkey finished') > 0:
                 endtime = datetime.datetime.now()
-                print(str(devices)+"测试完成咯")
+                print(str(devices) + "测试完成咯")
                 writeSum(1, path=PATH("./info/sumInfo.pickle"))
-                app[devices] ["header"]["beforeBattery"] = beforeBattery
+                app[devices]["header"]["beforeBattery"] = beforeBattery
                 app[devices]["header"]["afterBattery"] = BaseMonitor.get_battery(devices)
                 app[devices]["header"]["net"] = mc["net"]
                 app[devices]["header"]["monkey_log"] = mc["monkey_log"]
                 app[devices]["header"]["time"] = str((endtime - starttime).seconds) + "秒"
                 writeInfo(app, PATH("./info/info.pickle"))
                 break
-                    # go.info[devices]["header"]["sumTime"] = str((endtime - starttime).seconds) + "秒"
-                    # report(go.info)
+                # go.info[devices]["header"]["sumTime"] = str((endtime - starttime).seconds) + "秒"
+                # report(go.info)
     if readInfo(PATH("./info/sumInfo.pickle")) <= 0:
-        print(readInfo(PATH("./info/info.pickle")))
+        # print(readInfo(PATH("./info/info.pickle")))
         report(readInfo(PATH("./info/info.pickle")))
         subprocess.Popen("taskkill /f /t /im adb.exe", shell=True)
         # shutil.rmtree((PATH("./info/"))) # 删除持久化目录
@@ -131,7 +138,7 @@ def start(devicess):
 def start_monkey(cmd, log):
     # Monkey测试结果日志:monkey_log
     os.popen(cmd)
-    print(cmd)
+    # print(cmd)
 
     # Monkey时手机日志,logcat
     logcatname = log + r"logcat.log"
@@ -143,12 +150,45 @@ def start_monkey(cmd, log):
     cmd3 = "adb shell cat /data/anr/traces.txt>%s" % tracesname
     os.popen(cmd3)
 
+
 def killport():
     os.system(PATH('./kill5037.bat'))
     os.popen("adb kill-server adb")
     os.popen("adb start-server")
+
+
+def check_white_activity():
+    print("123")
+    try:
+        devices = ba.attached_devices()[0]
+        mc = BaseMonkeyConfig.monkeyConfig(PATH("monkey.ini"))
+        white_activity = mc.get("white_activity")
+        white_activity_list = white_activity.split(",")
+        adb_command = 'shell dumpsys window | findstr Focus'
+        adb_command_result = ba.call_adb(adb_command)
+        now_act = re.findall("mFocusedWindow=(.+?)u0 com.litatom.app/(.+?)}", adb_command_result)
+        now_act = now_act[0][1]
+        time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print(time, now_act)
+        if now_act not in white_activity_list and white_activity:
+            res = ba.open_app(mc["package_name"], white_activity_list[0], devices)
+            print(res)
+    except Exception:
+        check_white_activity()
+
+
+def fun_timer():
+    check_white_activity()
+
+    global timer
+
+    timer = threading.Timer(5, fun_timer)
+
+    timer.start()
+
+
 if __name__ == '__main__':
-    killport()
-    time.sleep(1)
-    runnerPool()
- 
+    # killport()
+    # time.sleep(1)
+    fun_timer()
+    # runnerPool()
